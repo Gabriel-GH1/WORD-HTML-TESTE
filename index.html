@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material de Bordo - Estilo Word</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        .word-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        h1 {
+            color: #2e74b5;
+            font-size: 20pt;
+            border-bottom: 1px solid #2e74b5;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        
+        /* Estilos da Tabela */
+        .material-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 11pt;
+            page-break-inside: avoid;
+            border: 1px solid #d0d0d0;
+        }
+        
+        .material-table th {
+            background-color: #2e74b5;
+            color: white;
+            font-weight: bold;
+            padding: 8px 12px;
+            text-align: left;
+            border: 1px solid #d0d0d0;
+        }
+        
+        .material-table td {
+            padding: 8px 12px;
+            border: 1px solid #d0d0d0;
+            vertical-align: top;
+        }
+        
+        .material-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .material-table tr:hover {
+            background-color: #e6e6e6;
+        }
+        
+        .qtd-column {
+            width: 60px;
+            text-align: center;
+        }
+        
+        .descricao-column {
+            width: 35%;
+        }
+        
+        .observacao-column {
+            width: 45%;
+        }
+        
+        .section-header {
+            background-color: #d0dce8 !important;
+            font-weight: bold;
+        }
+        
+        .empty-row {
+            height: 25px;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            font-size: 10pt;
+            color: #666;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .word-container {
+                box-shadow: none;
+                padding: 0;
+                border: none;
+            }
+            
+            .material-table tr {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="word-container">
+        <h1>MATERIAL DE BORDO</h1>
+        
+        <table class="material-table">
+            <tbody>
+                <tr>
+                    <td colspan="3" width="671">
+                        <p><strong>MATERIAL DE BORDO </strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p><strong>QTD </strong></p>
+                    </td>
+                    <td width="218">
+                        <p><strong>DESCRIÇÃO </strong></p>
+                    </td>
+                    <td width="406">
+                        <p><strong>OBSERVAÇÃO </strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>AIPs</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Bote inflável</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Cabo elétrico para Fonte Externa</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Calço</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Capa da entrada de ar do motor</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Capa de Sensor Ângulo de Ataque</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Capa do tubo de pitot e estática</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Capa externa janela/parabrisa</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Capa externa Toda aeronave</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Capa interna janela/Parabrisa</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Capa saída do motor</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Cartão de abastecimento</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Cartas de navegação IFR</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Cartas de Navegação VFR</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Chave da Aeronave</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Checklist</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Colete salva vida</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Cordas</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Diário de Bordo</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Estacas</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Extintor</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Funil</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Garfo</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>GPS portátil</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Headphone</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Kit de Primeiros socorros</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Kit Sobrevivência na selva</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Lanterna</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Lata de Óleo</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Manual de Operação</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Manual de Voo</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Máscara de oxigênio</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Microfone</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Recipiente para Drenagem</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>ROTAER</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Sobre tapete</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Travas de Comando</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="47">
+                        <p></p>
+                    </td>
+                    <td width="218">
+                        <p>Travas do Trem de Pouso</p>
+                    </td>
+                    <td width="406">
+                        <p></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="footer">
+            <p>Documento gerado em: <span id="current-date"></span></p>
+        </div>
+    </div>
+
+  
+        // Adiciona a data atual no rodapé
+        <script src="script.js"></script>
+    
+</body>
+</html>
